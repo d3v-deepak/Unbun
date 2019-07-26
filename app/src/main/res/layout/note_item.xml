@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+app:cardCornerRadius="20dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:padding="10sp"
+    app:cardBackgroundColor="#ffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#004c68"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/text_view_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="9dp"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_title"
+            android:layout_alignStart="@+id/dp"
+
+            android:layout_marginTop="57dp"
+            android:text="question"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/text_view_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="36dp"
+            android:maxLines="6"
+            android:visibility="gone"
+            android:text="answer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:text="date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="6dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="userName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/text_view_oneliner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_username"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="-1dp"
+android:visibility="gone"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="hey everyone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_view_date"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-19dp"
+            android:src="@drawable/defaultpic" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="-22dp"
+android:layout_marginTop="4dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_toStartOf="@id/text_view_priority"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

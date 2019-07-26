@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#004c68"
+    android:padding="16dp"
+    tools:context=".NewNoteActivity">
+
+
+
+
+    <Toolbar
+        android:id="@+id/toolbartop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_grey_border_top"
+        android:textAlignment="center"
+
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ask"
+                android:textSize="35sp"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+
+
+    </Toolbar>
+
+
+
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="30sp" />
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:hint="Write Your Question Here"
+        android:inputType="text"
+android:maxLines="2"
+        android:lines="2"
+        android:maxLength="140"
+
+
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+        <CheckBox
+
+            android:id="@+id/checkanonymous"
+
+            android:text="Ask anonymously"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check the Checkbox to which your question relates most closely"
+
+
+
+        />
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Priority:"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <NumberPicker
+        android:id="@+id/number_picker_priority"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_technology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Engineering And Technology" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_politics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Politics" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_buisness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buisness" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sports" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movies And Entertainment" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/checkBox_my_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your City" />
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox_yourstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your State" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ask to Other City Audience"
+
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="toothercity"
+
+    />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+<EditText
+    android:id="@+id/etothercity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="City Name to which you want to ask question"
+    android:visibility="gone"
+
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveNote"
+        android:text="Post"
+        tools:text="Post" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

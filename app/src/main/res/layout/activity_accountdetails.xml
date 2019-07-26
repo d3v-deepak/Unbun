@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#004c68"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accountdetails">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/defaultpic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="8sp" />
+
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="20sp" />
+
+            <EditText
+                android:id="@+id/personname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:textColorHint="#000"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/text_view_name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20sp"
+                android:layout_gravity="center"
+
+                android:text="text"
+                android:maxLength="30" />
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="20sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/personusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorHint="#000"
+                android:inputType="textPersonName"
+                android:hint="UserName"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="10sp" />
+
+            <TextView
+                android:id="@+id/usernamealert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username Exists.."
+                android:textColorHint="#000"
+                android:visibility="gone"/>
+
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="20sp" />
+
+
+
+            <EditText
+                android:id="@+id/userOnliner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="OneLiner"
+                android:textColorHint="#000"
+                android:visibility="gone"
+                android:maxLength="30"/>
+
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="20sp" />
+
+            <EditText
+                android:id="@+id/userbio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="Bio"
+                android:textColorHint="#000"
+                android:maxLength="200"
+                android:visibility="gone"
+                android:maxLines="4"/>
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="20sp" />
+
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="20sp" />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save And Continue"
+                android:textColor="#fff"
+android:visibility="gone"
+                android:onClick="tomainactivity"
+                android:background="#000"/>
+
+            <Button
+android:id="@+id/edit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+
+                android:textColor="#fff"
+
+                android:onClick="updateui_foredit"
+
+                android:background="#000"/>
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="14sp" />
+
+
+
+            <Button
+                android:id="@+id/sign_out"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:textColor="#fff"
+                android:background="#000"
+                android:textSize="15dp"
+
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
